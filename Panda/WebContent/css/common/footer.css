@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+footer{
+	width: 100%;
+	height: 200px;
+}
+
+#cover_footer{
+	width: inherit;
+	height: inherit;
+	background-color: gray;
+}

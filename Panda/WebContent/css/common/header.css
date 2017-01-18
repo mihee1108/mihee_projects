@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+header{
+	width: 100%;
+	height: 200px;
+}
+#up_header{
+	width: inherit;
+	height: 30px;
+	background-color: gray;
+}
+#bottom_header{
+	width: inherit;
+	height: 170px;
+	background-color: navy;
+}
+
+.a_tag{
+	float: right;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
