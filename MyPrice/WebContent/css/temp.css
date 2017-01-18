@@ -1,0 +1,97 @@
+@CHARSET "UTF-8";
+
+header {
+	width:100%;
+	height: 120px;
+	top:0px;	/*화면 맨 위 고정*/
+	overflow: hidden;
+}
+
+header > section {
+	width : 960px;	/* center, footer와 맞춤*/
+	height: 70px;
+	top:0px;
+	margin:0 auto;
+	/*background-image:url("../images/header.jpg");*/
+}
+.mainlogo {/* title 이미지, footer에도 있음 */
+	width : 300px;
+	height: 50px;
+	margin-left: 10px;
+	margin-top: 10px;
+	float:left;
+}
+#menu_header {
+	width : 500px;
+	float: right;
+	margin-top: 45px;
+}
+#menu_header > ul > li{
+	float: right;
+	font-size: 14px;
+	margin-right: 10px;
+}
+#menu_header > ul > li > a{
+	color: black;/* 색깔 블랙으로. 클릭했을 때 파란색 변하는거 막기 */
+	text-decoration: none;/* 언더라인 없애고 */	
+	
+}
+header > table{ /* 메인 메뉴 */
+	width:100%;
+	height: 50px;
+	background-color: #0066ff;
+}
+
+.tdin {
+	width:160px;
+	font-family:sans-serif;
+	font-size:18px;
+	/*font-weight:bold;*/
+	text-align: center;
+	color: white;
+}
+.tdin > a {
+	color: white;/* 색깔 흰색으로. 클릭했을 때 파란색 변하는거 막기 */
+	text-decoration: none;/* 언더라인 없애고 */
+	text-align: center;
+}
+.tdin > a:HOVER {
+	/*color: orange;*/
+}
+.tdout {
+	width:300px;	
+}
+
+
+
+
+#center {
+	width : 960px;
+	/*height: 1200px;*/
+	margin: 0 auto;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+
+
+footer {
+	width : 100%;
+	height: 100px;
+	margin-top: 10px;
+	/*background-image:url("../images/bottom_back.jpg");*/
+	border-top: 2px #999999 solid;
+}
+footer > section {
+	width : 960px;	/* center, footer와 맞춤*/
+	top:0px;
+	margin:0 auto;
+}
+/* footer mainlogo는 위에서 같은 클래스로 지정했음 */
+footer > section > div {
+	width : 300px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size:12px;
+}

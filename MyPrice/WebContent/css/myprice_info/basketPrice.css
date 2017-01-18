@@ -1,0 +1,415 @@
+@CHARSET "UTF-8";
+
+/* css 같은 메뉴 : 생필품가격정보(priceInfo), 장바구기가격, 생필품할인정보, 가격동향, 가격보고서 판매점점포 */
+
+#btn_basketPrice{
+	cursor: pointer;
+}
+ .filter{
+   margin-top: 10px;
+   border: none;
+   width:210px;
+   }
+#select1{
+     margin-left: 70px;
+     margin-bottom: 40px;
+     
+  }
+   .filter2 {
+  width: 190px; /* 원하는 너비설정 */
+  padding: .8em .5em; /* 여백으로 높이 설정 */
+  font-family: inherit;  /* 폰트 상속 */
+  background: url('/MyPrice/image/price_info_trend_common/selectBtn.PNG') no-repeat; /* 네이티브 화살표 대체 */  
+  border: 1px solid #999; 
+  border-radius: 0px; /* iOS 둥근모서리 제거 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none; 
+  border: none;
+  }
+#submenu{
+	width:20%;	
+	float: left;
+	border-left: 1px #cccccc solid;
+}
+#sm_image{
+	width:100%;
+	height: 157px;
+	background-image:url("/MyPrice/image/sm_image.JPG");
+	overflow: hidden;
+}
+#sm_image > p{
+	margin-top:80px;
+	text-align:center;
+	font-size:24px;
+	font-weight: bold;
+	color: #0066ff;
+}
+#sm_list{
+	width:100%;
+		
+}
+
+#info{
+	width: 79.7%;
+	float:right;
+	border-left: 1px #cccccc solid;
+}
+#info_image{
+	width: 93%;
+	height: 220px;
+	margin-left:7%;
+	border-bottom: 2px #0066ff solid;
+	background-image:url("/MyPrice/image/info_image.JPG");
+	overflow: hidden;
+}
+#info_image > p{
+	margin-top:110px;
+	text-align:left;
+	font-size:30px;
+	font-weight: bold;
+	color: black;
+}
+#info_check{
+	width: 93%;
+	margin-left:7%;
+}
+#info_list{
+	width: 93%;
+	margin-left:7%;;
+	border: 1px black solid;	
+}
+
+
+/* 2016-11-16 : sm_list(왼쪽 서브메뉴) 내용 추가 */
+#sm_list > ul > li{
+	height: 30px;
+	border-bottom: 1px #cccccc solid;
+	padding-top: 10px;
+	padding-left: 10px;
+	background:url('/MyPrice/image/side_bg02.gif') no-repeat right 12px;  
+}
+#sm_list > ul > li:hover, #sm_list_on {
+font-weight: bold;
+background:url('/MyPrice/image/side_bg02on.gif') no-repeat right 12px;
+text-decoration: none;/* 언더라인 없애고 */
+cursor: pointer;
+}
+#sm_list > ul > li > a{
+color: #636363;
+text-decoration: none;/* 언더라인 없애고 */
+
+}
+/* (2016-11-20) 버튼이미지 전체에 적용*/
+.btn_style {
+	height:20px;
+	display:block;
+	color:#0066ff;
+	font-size:14px;
+	background-color:white;
+	border: 1px #0066ff solid;
+	text-align:center;
+	cursor:pointer;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+#btn_submit{
+	width:300px;
+	height:40px;
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+	background-color:#0066ff;
+
+}
+
+
+
+
+
+table{
+		width:100%;
+	}
+	
+	/* t2관련 css */
+	#t2{
+		height:500px;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 12px;
+		color: #636363;
+	}
+	.listbar{
+		background-color: #fafafa;
+	}
+	#curPage{
+		text-align: center;
+	}
+	
+	/* storeInfo_intro 문구 css설정 */
+	#intro{
+		margin-left:7%;
+		background-color: #fdfdfd;
+		border: 1px solid #8c8c8c;	
+		padding-top: 25px;
+		padding-bottom: 20px;
+	}
+	
+	#intro_msg{
+	display: inline-block;
+	font-size: 12px;
+	color: #636363;
+	} 
+	
+	#intro_img{
+	display: inline-block;
+	border-right: 1px solid #8c8c8c;	
+	}
+	
+	#intro_msg > p >span{
+		color: #0066ff;
+		text-align: center;
+		font-size: 15px;
+	}
+	
+	#curPage>#pageNum{
+	text-decoration: none;
+	}
+	#btn_down{
+	background-color: #e66a34;
+	display: inline-block;
+    background: #348be6;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    cursor:pointer;
+	}
+/* 장바구니 table */
+.t2{
+    float: left;
+    font-family: 'Nanum Gothic bold';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 45px;
+    color: #000;
+    text-align: center;
+}
+#td1{
+	width: 435px;
+}
+	
+#font{
+	float: left;
+    margin-right: 6px;
+    width: 100%;
+    height: 47px;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+/* 표안에다가 뿌려주기 */
+.basket_chart{
+	height: 46px;
+    border-top: 2px solid #959da6;
+    border-bottom: 1px solid #d6dadd;
+}
+
+#chartInfo{
+	width: 200px;
+}
+#chartPrice{
+	width: 111px;
+}
+#areaPrice{
+	width: 400px;
+}
+#chartInfo2{
+	width: 200px;
+}
+#chartPrice2{
+	width: 111px;
+}
+#areaPrice2{
+	width: 400px;
+}	
+
+
+/* common에 있던것들 */
+	
+	
+/* 필터 */
+	#info_check_detail{
+      background-color:#fafafa;
+      width: 100%;
+      height:500px;
+      margin: 0 auto;
+      margin-top: 62px;
+      border-top: 2px #0066ff solid;
+   }
+	
+	.filter{
+   margin-top: 10px;
+   border: none;
+	}
+
+	.filter2 {
+  width: 190px; /* 원하는 너비설정 */
+  padding: .8em .5em; /* 여백으로 높이 설정 */
+  font-family: inherit;  /* 폰트 상속 */
+  background: url('/MyPrice/image/price_info_trend_common/selectBtn.PNG') no-repeat; /* 네이티브 화살표 대체 */  
+  border: 1px solid #999; 
+  border-radius: 0px; /* iOS 둥근모서리 제거 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none; 
+  border: none;
+  }
+/* 주소검색 */
+#searchAdress {
+   width: 190px; height: 34px;
+   border: 1px solid  #999;
+   line-height: 21px;
+   font-weight: bold;
+   font-size: 13px;
+   outline: none;
+   background: url('/MyPrice/image/price_info_trend_common/findBtn.PNG') no-repeat; 
+   border: none;
+}
+input[class="FilterBtn"] + label{
+  background: url('/MyPrice/image/price_info_trend_common/filterBtn.png') no-repeat;
+  background-size: 28px 30px;
+  display: inline-block;
+  margin-left:4px;
+  width: 29px;
+  height: 33px;
+  cursor: pointer;
+  
+}
+
+input[class="FilterBtn"]:checked + label {
+     background: url('/MyPrice/image/price_info_trend_common/filterBtnClick.png') no-repeat;
+     background-size: 29px 33px;
+}
+input[class="FilterBtn"] {
+   display: none; 
+}
+	/* ============================ */
+	/* check1관련 css */
+	#info_check{
+	width: 93%;
+	margin-left:7%;
+	background-color: #fafafa;
+	border: 1px black solid;
+	}
+	
+	#check_1{
+	width: 100%;
+	height:50px;
+	border: none;
+	outline: none;
+	}
+	
+	#findArea{
+	width:95%;
+	height:41px;
+	margin-left:20px;
+	display:block;
+  	font-size: 16px;
+  	outline: none;
+  	border: none;
+	}
+	
+	#findBtn{
+   width:35%;
+   height:44px;
+   display:block;
+   background-color:#0066ff;
+   border-radius: 2px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 40px;
+   
+  
+   }
+	
+	#td1{
+	width:75%; 
+	}
+	
+	#td2{
+	width:75%;
+	}
+	
+	/* ============================ */
+    /* check2관련 css */
+	#check_2{
+	width: 100%;
+	height:50px;
+	border: none;
+	}
+	.datepicker{
+	width: 100%;
+	height:41px;
+	background:url('/MyPrice/image/price_info_trend_common/selectDate.PNG') no-repeat; 
+	padding-bottom:20px;
+	border: none;
+	font-size: 18px;
+	}
+	
+	input:focus {
+ 	 outline: none;
+	}
+	
+	/* ****************************** */
+	#goodName{
+   	width: 93%;
+   	margin-left:7%;
+   	margin-top:7%;
+   	background-color: #fafafa;
+   	text-align: center;
+   }
+
+#fa1{
+   	border-top: 2px solid #959595;
+   	border-bottom: 2px solid #959595;;
+   	width: 350px;
+   	text-align: center;
+   	font-weight: bold;
+   	text-align: -internal-center;
+   }
+#fa2{
+   	border-top: 2px solid #959595;
+   	border-bottom: 2px solid #959595;;
+   	width: 80px;
+   	text-align: center;
+   	font-weight: bold;
+   	text-align: -internal-center;
+   }
+   #fa3{
+   	border-top: 2px solid #959595;
+   	border-bottom: 2px solid #959595;;
+   	width: 80px;
+   	text-align: center;
+   	font-weight: bold;
+   	text-align: -internal-center;
+   }   
+   .fa2{
+   	border: 1px solid #c8c8c8;
+   	background-color: white;
+   	font: 12pt sans-serif;
+   }
+	#fa4{
+	font: normal small-caps 120%/120% fantasy;
+	border: 1px solid #c8c8c8;
+	background-color: white;
+	}

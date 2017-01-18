@@ -1,0 +1,128 @@
+@CHARSET "UTF-8";
+/* notice.jsp */
+#info_list > * {
+	margin-top: 30px;
+}
+#d_search {
+	width: 100%;
+	height: 30px;
+}
+#d_search > *{
+	float: left;
+	margin-left: 10px;
+}
+#btn_admin, .btn_admin_del, .btn_admin_update {
+	float: right;
+	margin-right: 10px;
+}
+#t_list {
+	width: 100%;
+	border-top: 2px black solid;
+}
+#t_list > tr {
+	height:40px;	
+}
+.td_out, .num, .title, .reg_date {
+	font-weight:bold;
+	text-align: center;
+	border-bottom: 2px black solid;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#t_list > tr, td{
+	text-align: center;
+}
+.td_out{
+	width: 3%;
+}
+.num {
+	width: 8%;
+}
+.title {
+	width: 55%;	
+}
+.reg_date {
+	width: 15%;	
+}
+.t_red{
+	color:red;
+	font-weight:bold;
+}
+.td_title{
+	text-align: left;
+	padding-left: 10px;
+}
+.td_title:HOVER{
+	cursor:pointer;
+	font-weight: bold;
+}
+.td_contents {
+	display: none;
+	text-align: left;
+	border-top:1px solid black;
+	background-color: #fafafa;
+}
+.td_contents > button{
+	float: right;
+	margin-right: 5px;
+	font-size: 14px;
+	color: #0066ff;
+}
+.td_contents > p{
+	padding: 5px 10px 5px 10px;	
+}
+.td_contents > li{
+	display:inline;
+	float: left;
+	margin-left: 5px;
+	font-size: 14px;
+	font-weight:bold;
+	color: #0066ff;
+}
+
+#paging {
+	width: 100%;
+	height:70px;
+	text-align:center;
+	border-top: 2px black solid;
+	padding-top: 20px;
+}
+#paging > a {
+	color: black;/* 색깔 흰색으로. 클릭했을 때 파란색 변하는거 막기 */
+	text-decoration: none;/* 언더라인 없애고 */
+}
+#paging > a:HOVER{
+	font-weight: bold;
+}
+	
+/* noticeWrite.jsp */
+#t_write {
+	width:100%;
+	margin-bottom: 30px;
+}
+#t_write > tr, td{
+	height:40px;
+	font-size: 14px;
+}
+.t_l {
+	width: 10%;
+	text-align: right;
+	padding-right: 10px;
+}
+.t_r {
+	width: 100%;
+}
+.t_r > *{
+	float: left;
+}
+#title, .contents {
+	width: 98%;
+	float: left;
+	resize:none;
+}
+#contents {
+	height:200px;
+	border: 1px #8c8c8c solid;
+	text-align:left;
+	overflow: scroll;
+}

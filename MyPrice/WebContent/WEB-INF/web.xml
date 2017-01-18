@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app metadata-complete="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+<error-page>
+ <error-code>404</error-code>
+ <location>/MyPrice/index_MyPrice.jsp</location>
+</error-page>
+
+<error-page>
+ <exception-type>500</exception-type>
+ <location>/MyPrice/index_MyPrice.jsp</location>
+</error-page>
+
+
+<servlet>
+	<servlet-name>index</servlet-name>
+	<servlet-class>mp.controller.IndexController</servlet-class>
+	<init-param>
+		<param-name>properties</param-name>
+		<param-value>index.properties</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>index</servlet-name>
+	<url-pattern>*.index</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>alarm</servlet-name>
+	<servlet-class>mp.controller.AlarmController</servlet-class>
+	<init-param>
+		<param-name>properties</param-name>
+		<param-value>alarm.properties</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>alarm</servlet-name>
+	<url-pattern>*.alarm</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>price</servlet-name>
+	<servlet-class>mp.controller.PriceController</servlet-class>
+	<init-param>
+		<param-name>properties</param-name>
+		<param-value>price.properties</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>price</servlet-name>
+	<url-pattern>*.price</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>notice</servlet-name>
+    <servlet-class>mp.controller.NoticeController</servlet-class>
+    <init-param>
+      <param-name>properties</param-name>
+      <param-value>notice.properties</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>notice</servlet-name>
+    <url-pattern>*.notice</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ask</servlet-name>
+    <servlet-class>mp.controller.AskController</servlet-class>
+    <init-param>
+      <param-name>properties</param-name>
+      <param-value>ask.properties</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ask</servlet-name>
+    <url-pattern>*.ask</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>member</servlet-name>
+    <servlet-class>mp.controller.MemberController</servlet-class>
+    <init-param>
+      <param-name>properties</param-name>
+      <param-value>member.properties</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>member</servlet-name>
+    <url-pattern>*.member</url-pattern>
+  </servlet-mapping>
+
+
+  <filter>
+    <filter-name>encoding</filter-name>
+    <filter-class>mp.filter.EncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>encoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <resource-ref>
+    <res-ref-name>jdbc/choa</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+</web-app>

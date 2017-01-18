@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+@import "compass/css3";
+
+$DarkBrown: #292321;
+
+$Orange: #CC3300;
+
+#radioBox{
+	margin:0 0 0.75em 0;
+}
+input[type="radio"] {
+    /* display:none; */
+}
+input[type="radio"] + label {
+    color: $DarkBrown;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}

@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+#info_list > table {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#info_list > table > tr, td{
+	height:40px;
+	font-size: 14px;
+	
+}
+.t_l, .t_l_g1, .t_l_g2, .t_l_g3 {
+	width: 100px;
+	text-align: right;
+	padding-right: 10px;
+}
+.t_l_g1 {
+	font-weight:bold;
+	color: red;
+}
+.t_l_g2 {
+	font-weight:bold;
+	color: blue;
+}
+.t_l_g3 {
+	font-weight:bold;
+	color: black;
+}
+.t_r_items > * {
+	float:left;
+	margin-right: 10px;
+}
+.t_r_items > input {
+	background-color: white;
+}
+.t_r_items > p {
+	color: red;
+	font-size: 13px;
+}
+.t_r > a {
+	text-decoration: none;/* 언더라인 없애고 */
+}
+textarea {
+	background-color: white;
+}
+#t_null{
+	height: 30px;
+}
+#result_message {
+	/*  안 먹힘 ㅠㅠ */
+	height:30px;
+	font-weight:bold;
+	font-size:20px;	
+	color: black;
+}
+#result_DAO {
+	width:100px;
+	height:30px;		
+}

@@ -1,0 +1,142 @@
+@CHARSET "UTF-8";
+   /* 필터 */
+   #info_check_detail{
+      background-color:#fafafa;
+      width: 100%;
+      height:500px;
+      margin: 0 auto;
+      margin-top: 62px;
+      border-top: 2px #0066ff solid;
+   }
+   
+   .filter{
+   margin-top: 10px;
+   border: none;
+   width:210px;
+   }
+
+   .filter2 {
+  width: 190px; /* 원하는 너비설정 */
+  padding: .8em .5em; /* 여백으로 높이 설정 */
+  font-family: inherit;  /* 폰트 상속 */
+  background: url('/MyPrice/image/price_info_trend_common/selectBtn.PNG') no-repeat; /* 네이티브 화살표 대체 */  
+  border: 1px solid #999; 
+  border-radius: 0px; /* iOS 둥근모서리 제거 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none; 
+  border: none;
+  }
+  #select1{
+     margin-left: 70px;
+     
+  }
+/* 주소검색 */
+#searchAdress {
+   width: 190px; height: 34px;
+   border: 1px solid  #999;
+   line-height: 21px;
+   font-weight: bold;
+   font-size: 13px;
+   outline: none;
+   background: url('/MyPrice/image/price_info_trend_common/findBtn.PNG') no-repeat; 
+   border: none;
+}
+
+   /* ============================ */
+   #goodName{
+   	width: 93%;
+   	margin-left:7%;
+   	margin-top:7%;
+   	background-color: #fafafa;
+   	text-align: center;
+   }
+   .fa1{
+   	border-top: 2px solid #959595;
+   	width: 200px;
+   	text-align: center;
+   	font-weight: bold;
+   	text-align: -internal-center;
+   }
+   
+   .fa2{
+   	border: 1px solid #c8c8c8;
+   }
+   
+   
+   
+   
+   
+   /* check1관련 css */
+   #info_check{
+   width: 93%;
+   margin-left:7%;
+   background-color: #fafafa;
+   }
+   
+   #check_1{
+   width: 100%;
+   height:50px;
+   border: none;
+   outline: none;
+   }
+   
+   #findArea{
+   width:95%;
+   height:41px;
+   margin-left:20px;
+   display:block;
+     font-size: 16px;
+     outline: none;
+     border: none;
+   }
+   
+   #findBtn{
+   width:76%;
+   height:44px;
+   margin-left:20px;
+   display:block;
+   background-color:#0066ff;
+   border-radius: 2px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+   }
+   
+   #td1{
+   width:75%; 
+   }
+   
+   #td2{
+   width:25%;
+   }
+   
+   /* ============================ */
+    /* check2관련 css */
+   #check_2{
+   width: 100%;
+   height:50px;
+   border: none;
+   }
+   .datepicker{
+   width: 100%;
+   height:41px;
+   margin-left:20px;
+   background:url('/MyPrice/image/price_info_trend_common/selectDate.PNG') no-repeat; 
+   padding-bottom:20px;
+   border: none;
+   font-size: 18px;
+   }
+   
+   input:focus {
+     outline: none;
+   }
+   /* 검색버튼 CSS */
+#check_3{
+	margin-left:438px;
+	padding-bottom: 200px;
+}
+

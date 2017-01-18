@@ -1,0 +1,100 @@
+@CHARSET "UTF-8";
+
+/* css 같은 메뉴 : 생필품가격정보(priceInfo), 장바구기가격, 생필품할인정보, 가격동향, 가격보고서 판매점점포 */
+
+#submenu{
+	width:20%;	
+	float: left;
+	border-left: 1px #cccccc solid;
+}
+#sm_image{
+	width:100%;
+	height: 157px;
+	background-image:url("/MyPrice/image/sm_image.JPG");
+	overflow: hidden;
+}
+#sm_image > p{
+	margin-top:80px;
+	text-align:center;
+	font-size:24px;
+	font-weight: bold;
+	color: #0066ff;
+}
+#sm_list{
+	width:100%;
+		
+}
+
+
+#info{
+	width: 79.7%;
+	float:right;
+	border-left: 1px #cccccc solid;
+}
+#info_image{
+	width: 93%;
+	height: 220px;
+	margin-left:7%;
+	border-bottom: 2px #0066ff solid;
+	background-image:url("/MyPrice/image/info_image.JPG");
+	overflow: hidden;
+}
+#info_image > p{
+	margin-top:110px;
+	text-align:left;
+	font-size:30px;
+	font-weight: bold;
+	color: black;
+}
+#info_check{
+	width: 93%;
+	margin-left:7%;
+	background-color:red;
+}
+#info_list{
+	width: 93%;
+	margin-left:7%;;	
+}
+
+
+/* 2016-11-16 : sm_list(왼쪽 서브메뉴) 내용 추가 */
+#sm_list > ul > li{
+	height: 30px;
+	border-bottom: 1px #cccccc solid;
+	padding-top: 10px;
+	padding-left: 10px;
+	background:url('/MyPrice/image/side_bg02.gif') no-repeat right 12px;  
+}
+#sm_list > ul > li:hover, #sm_list_on {
+font-weight: bold;
+background:url('/MyPrice/image/side_bg02on.gif') no-repeat right 12px;
+text-decoration: none;/* 언더라인 없애고 */
+cursor: pointer;
+}
+#sm_list > ul > li > a{
+color: #636363;
+text-decoration: none;/* 언더라인 없애고 */
+
+}
+/* (2016-11-20) 버튼이미지 전체에 적용*/
+.btn_style {
+	height:20px;
+	display:block;
+	color:#0066ff;
+	font-size:14px;
+	background-color:white;
+	border: 1px #0066ff solid;
+	text-align:center;
+	cursor:pointer;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+#btn_submit{
+	width:300px;
+	height:40px;
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+	background-color:#0066ff;
+
+}

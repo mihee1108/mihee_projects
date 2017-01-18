@@ -1,0 +1,157 @@
+@CHARSET "UTF-8";
+
+#center > section {
+	width:100%;	
+}
+#c_image {
+	height: 185px;
+	margin-top: 0px;
+	background-image:url("/MyPrice/image/c_image.JPG");
+}
+
+
+/* (2016-12-05) 가격정보 */
+#c_priceInfo{
+	height: 300px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+ul.tabs {
+	width:100%;
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 10%; /*--Set height of tabs--*/
+	border-bottom: 3px solid #0066ff;
+	border-left: 1px solid #8c8c8c;
+
+}
+ul.tabs li {
+	width:auto;
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 100%; /*--Subtract 1px from the height of the unordered list--*/
+	line-height: 30px; /*--Vertically aligns the text within the tab--*/
+	border: 1px solid #8c8c8c;
+	border-left: none;
+	margin-bottom: -1px; /*--Pull the list item down 1px--*/
+	overflow: hidden;
+	position: relative;
+	background: #fafafa;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font-size: 14px;
+	padding: 0px 20px;
+	border: 1px solid #fff; /*--Gives the bevel look with a 1px white border inside the list item--*/
+	outline: none;
+}
+ul.tabs li a:hover {
+	cursor: pointer;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover  { /*--Makes sure that the active tab does not listen to the hover properties--*/
+	border: 2px solid #0066ff; /*--Makes the active tab look like it's connected with its content--*/
+	border-bottom: none;
+	background-color: white;
+}
+
+.tab_container {
+	width:99.5%;
+	height:88%;
+	border: 3px solid #0066ff;
+	border-top: none;
+	overflow: hidden;
+	clear: both;
+	float: left;
+}
+.tab_content {
+	height:98%;
+	padding: 20px 20px;
+	
+}
+#tab_priceInfo {
+	width: 65%;
+	height:100%;
+	float:left;
+	font-size:14px;
+	overflow:scroll;
+}
+.table_priceInfo {
+	width: 100%;
+}
+.table_t {
+	text-align: center;
+	height: 10px;
+}
+.table_h {
+	height: 40px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	background-color: #636363;
+	
+}
+.name {
+	width: 40%;
+}
+.price {
+	width: 10%;
+}
+.td_priceInfo {
+	height: 30px;
+	text-align: center;
+	border-bottom: 1px dotted #636363;
+
+}
+#chart_div {
+	width:33%;
+	height:90%;
+	float: right;
+}
+
+
+/* (2016-12-05) 공지 */
+#c_third{
+	height: 200px;
+	margin-top: 20px;	/* 왜 안됨 */
+}
+#c_notice{
+	width: 99.7%;
+	height:100%;
+	float: left;
+	border: 1px #8c8c8c solid;
+	overflow: hidden;
+}
+#t_notice{
+	width: 100%;
+
+}
+.t_n_h {
+	height:40px;
+	border-bottom: 2px #636363 solid;
+	font-weight: bold;
+}
+.td_n_out{
+	width: 5%;
+	height: 30px;
+}
+.td_n_title > a, .td_n_date>a  {
+	color: black;/* 색깔 블랙으로. 클릭했을 때 파란색 변하는거 막기 */
+	text-decoration: none;/* 언더라인 없애고 */
+}
+.td_n_date{
+	width: 10%;
+}
+
+/* 매장찾기  : 미희씨 */
+#c_searchStore{
+	width: 40%;
+	float: right;
+	border: 1px solid #8c8c8c;
+}
+

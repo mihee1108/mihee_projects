@@ -1,0 +1,86 @@
+@CHARSET "UTF-8";
+
+	/* t2관련 css */
+
+	#info_list_check{
+		width:100%;
+		height:50px;
+		background-color: #fafafa;
+		margin: 0 auto;
+		color: #636363;
+		font-size: 15px;
+		text-align: center;
+	}
+	#info_list_check2{
+		width:100%;
+		height:50px;
+		background-color: #fafafa;
+		margin: 0 auto;
+		color: #636363;
+		font-size: 15px;
+		text-align: center;
+	}
+	#info_list_check_bar{
+	    width:100%;
+		height:50px;
+		text-align: center;
+	}
+	#info_list_table{
+		width:100%;
+		margin: 0 auto;
+		color: #636363;
+		font-size: 12px;
+		text-align: center;
+	}
+	/* t2관련 css가 수정되었음 2016/11/30 미희 */
+	#t2{
+		width:100%;
+		text-align: center;
+		
+	}
+	#curPage{
+		text-align: center;
+	}
+	
+	/* storeInfo_intro 문구 css설정 */
+	#intro{
+		margin-left:7%;
+		background-color: #fdfdfd;
+		border: 1px solid #8c8c8c;	
+		padding-top: 25px;
+		padding-bottom: 20px;
+	}
+	
+	#intro_msg{
+	display: inline-block;
+	font-size: 12px;
+	color: #636363;
+	} 
+	
+	#intro_img{
+	display: inline-block;
+	border-right: 1px solid #8c8c8c;	
+	}
+	
+	#intro_msg > p >span{
+		color: #0066ff;
+		text-align: center;
+		font-size: 15px;
+	}
+	
+	#curPage>#pageNum{
+	text-decoration: none;
+	}
+	#btn_down{
+	background-color: #e66a34;
+	display: inline-block;
+    background: #348be6;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    cursor:pointer;
+    
+	}
+	

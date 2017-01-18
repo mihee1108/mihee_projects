@@ -1,0 +1,136 @@
+@CHARSET "UTF-8";
+#info_list > * {
+	margin-top: 30px;
+}
+#memberList {
+	width: 100%;
+}
+#d_search {
+	width: 100%;
+	height: 250px;
+}
+#d_search > table {
+	width:100%;
+	border-top: 1px #0066ff solid;
+	border-bottom: 1px #0066ff solid;
+}
+.t_s_out{
+	width: 2%;
+}
+.t_s_l{
+	height: 30px;
+	text-align: right;
+	padding-right: 5px;	
+}
+.t_s_btns {
+	float: left;
+	padding: 10px;
+}
+
+.t_s_items > * {
+	float:left;
+	margin-right: 10px;
+}
+.t_s_items > p {
+	color: red;
+}
+
+
+
+
+#t_list {
+	width: 100%;
+	border-top: 2px black solid;
+}
+.td_out, .id, .phone {
+	font-weight:bold;
+	text-align: center;
+	border-bottom: 2px black solid;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.td_member {
+	text-align: center;
+}
+.td_out{
+	width: 3%;
+}
+.id {
+	width: 13%;
+}
+.phone {
+	width: 18%;	
+}
+.tr_member {
+	height: 40px;
+}
+.tr_member > td:HOVER{
+	cursor:pointer;
+	font-weight: bold;
+}
+.td_contents {
+	display: none;
+	text-align: left;
+}
+.td_contents > p{
+	padding: 5px 10px 5px 10px;	
+}
+.td_contents > li{
+	display:inline;
+	float: left;
+	margin-left: 5px;
+	font-size: 14px;
+	font-weight:bold;
+	color: #0066ff;
+}
+.td_contents > table {
+	width:97%;
+	margin: 10px 10px 10px 10px;
+}
+.td_contents_th, .td_contents_td {
+	border: 1px #0066ff solid;
+	font-size:14px;
+}
+.td_contents_th {
+	width:13%;
+	text-align: right;
+	padding: 5px 5px 5px;
+}
+ .td_contents_td {
+	width:22%;
+	text-align: left;
+	padding: 5px 5px 5px 5px;
+	font-weight: bold;
+}
+.td_contents_th_2 {
+	width:16%;
+}
+.td_contents_td_2 {
+	width:8%;
+}
+
+
+#paging {
+	width:100%;
+	height:70px;
+	text-align:center;
+	border-top: 2px black solid;
+	padding-top: 20px;
+}
+#paging > li {
+	color: black;/* 색깔 흰색으로. 클릭했을 때 파란색 변하는거 막기 */
+	text-decoration: none;/* 언더라인 없애고 */
+	margin:0 auto;
+	float: left;
+	display: inline;
+	padding-left: 5px;
+}
+#paging > li:HOVER{
+	font-weight: bold;
+	cursor: pointer;
+}
+.paging_margin {
+	width: 250px;
+	height: 100%;
+	float: left;
+}
